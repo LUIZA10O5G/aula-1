@@ -7,16 +7,16 @@ function mostraPalavrasChave() {
     const campoResultado = document.querySelector('#resultado-palavrachave');
     const palavrasChave  = processaTexto(texto);
     
-    campoResultado.textContent = palavrasChave.join(', ');
+    campoResultado.textContent = palavrasChave.join(",");
 }
 
-function processa Texto (texto) {
+function processaTexto (texto) {
     let palavras = texto.split(/\P{L}+/u);
     
     let frequencias = [];
     for(let i in palavras) {
         frequencias [i] = 0;
-        for (let jin palavras) {
+        for (let j in palavras) {
             if (palavras[i]==palavras[j]){
                 frequencias[i]++;
             }
